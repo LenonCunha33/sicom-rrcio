@@ -2,7 +2,6 @@
 import ArrowRight from "@/src/assets/arrow-right.svg";
 import starImage from "@/src/assets/Preenchimento.png";
 import springImage from "@/src/assets/mao.png";
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -45,8 +44,8 @@ export const CallToAction = () => {
           />
         </div>
         <div className="flex gap-2 mt-10 justify-center">
-          <button className="btn btn-primary">Ler Mais</button>
-          <button className="btn btn-text gap-1">
+          <button className="btn btn-primary bg-[#004A99]">Ler Mais</button>
+          <button className="btn btn-text gap-1 text-[#004A99]">
             <span>Seguir Agora</span>
             <ArrowRight className="h-5 w-5" />
           </button>

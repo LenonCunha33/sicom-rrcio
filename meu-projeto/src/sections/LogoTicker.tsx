@@ -1,5 +1,5 @@
 "use client";
-import acmeLogo from "@/src/assets/logo-acme.png";
+import acmeLogo from "@/src/assets/FecomercioLogo.png";
 import quantumLogo from "@/src/assets/SescLogo.png";
 import echoLogo from "@/src/assets/Senac Logo.png";
 import celestialLogo from "@/src/assets/SicomercioLogo.png";

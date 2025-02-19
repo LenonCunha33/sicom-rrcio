@@ -6,7 +6,7 @@ import MenuIcon from "@/src/assets/menu.svg";
 export const Header = () => {
   return (
     <header className="sticky top-0 backdrop-blur-sm z-20">
-      <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
+      <div className="flex justify-center items-center py-3 bg-[#004A99] text-white text-sm gap-3">
         <p className="text-white/60 hidden md:block">
           Fortaleça seu Sindicato e garanta o futuro da sua empresa.
         </p>
@@ -26,7 +26,7 @@ export const Header = () => {
               <a href="#">Notícias</a>
               <a href="#">Serviços</a>
               <a href="#">Soluções</a>
-              <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">
+              <button className="bg-[#004A99] text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">
                 Seja Associado
               </button>
             </nav>

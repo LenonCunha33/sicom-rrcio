@@ -1,13 +1,5 @@
 "use client";
 import avatar1 from "@/src/assets/AvatarFeriados.png";
-import avatar2 from "@/src/assets/AvatarFeriados.png";
-import avatar3 from "@/src/assets/AvatarFeriados.png";
-import avatar4 from "@/src/assets/AvatarFeriados.png";
-import avatar5 from "@/src/assets/AvatarFeriados.png";
-import avatar6 from "@/src/assets/AvatarFeriados.png";
-import avatar7 from "@/src/assets/AvatarFeriados.png";
-import avatar8 from "@/src/assets/AvatarFeriados.png";
-import avatar9 from "@/src/assets/AvatarFeriados.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
@@ -122,7 +114,7 @@ export const Testimonials = () => {
           </div>
           <h2 className="section-title mt-5">Acesse os Feriados do Comércio</h2>
           <p className="section-description mt-5">
-          A seção "Feriados no Comércio" fornece informações essenciais sobre os feriados em que o funcionamento do comércio pode ser alterado. A tabela detalha as datas e indica se as lojas estarão abertas ou fechadas, conforme a legislação vigente e convenções locais. Esta ferramenta é útil para que consumidores e comerciantes se planejem adequadamente, evitando transtornos. Para garantir uma operação eficiente e em conformidade, é importante observar as variações que podem ocorrer em feriados nacionais e regionais.
+          A seção Feriados no Comércio fornece informações essenciais sobre os feriados em que o funcionamento do comércio pode ser alterado. A tabela detalha as datas e indica se as lojas estarão abertas ou fechadas, conforme a legislação vigente e convenções locais. Esta ferramenta é útil para que consumidores e comerciantes se planejem adequadamente, evitando transtornos. Para garantir uma operação eficiente e em conformidade, é importante observar as variações que podem ocorrer em feriados nacionais e regionais.
           </p>
         </div>
         <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[738px] overflow-hidden">
