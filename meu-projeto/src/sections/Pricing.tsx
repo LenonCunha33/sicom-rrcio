@@ -5,94 +5,98 @@ import { motion } from "framer-motion";
 
 const pricingTiers = [
   {
-    title: "2024",
-    monthlyPrice: 2024,
-    buttonText: "Acesse",
-    popular: false,
-    inverse: false,
-    features: [
-      "---",
-      "---",
-      "---",
-      "---",
-      "---",
-    ],
-  },
-  {
-    title: "2025",
+    title: "2024-2025",
     monthlyPrice: 2025,
     buttonText: "Acesse",
     popular: true,
     inverse: true,
     features: [
-      "---",
-      "---",
-      "---",
-      "---",
-      "---",
-      "---",
-      "---",
+      "Renovação das cláusulas",
     ],
   },
   {
-    title: "2023",
+    title: "2023-2025",
+    monthlyPrice: 2024,
+    buttonText: "Acesse",
+    popular: false,
+    inverse: false,
+    features: [
+      "Atualização das cláusulas",
+    ],
+  },
+  {
+    title: "2021-2023",
     monthlyPrice: 2023,
     buttonText: "Acesse",
     popular: false,
     inverse: false,
     features: [
-      "---",
-      "---",
-      "---",
-      "---",
-      "---",
-      "--",
-      "---",
-      "---",
-      "---",
-      "---",
+      "Renovação de cláusulas",
+    ],
+  },
+  {
+    title: "2023-2025",
+    monthlyPrice: 2024,
+    buttonText: "Acesse",
+    popular: false,
+    inverse: false,
+    features: [
+      "Atualização das cláusulas",
+    ],
+  },
+  {
+    title: "2024-2025",
+    monthlyPrice: 2025,
+    buttonText: "Acesse",
+    popular: false,
+    inverse: false,
+    features: [
+      "Renovação das cláusulas",
+    ],
+  },
+  {
+    title: "2021-2023",
+    monthlyPrice: 2023,
+    buttonText: "Acesse",
+    popular: false,
+    inverse: false,
+    features: [
+      "Renovação de cláusulas",
     ],
   },
 ];
 
 export const Pricing = () => {
   return (
-    <section className="py-24 bg-white">
+    <section id="Servicos" className="py-24 bg-white">
       <div className="container">
         <div className="section-heading">
           <h2 className="section-title">Convenções Coletivas</h2>
           <p className="section-description mt-5">
-          No nosso site, você encontra todas as Convenções Coletivas de Trabalho, com informações detalhadas sobre salários, benefícios, jornada de trabalho e outros direitos garantidos para os profissionais do comércio.
+            No nosso site, você encontra todas as Convenções Coletivas de Trabalho, com informações detalhadas sobre salários, benefícios, jornada de trabalho e outros direitos garantidos para os profissionais do comércio.
           </p>
         </div>
-        <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center">
+        <div className="grid grid-cols-1 gap-6 mt-10 ml-20 md:grid-cols-2 lg:grid-cols-3">
           {pricingTiers.map(
-            ({
-              title,
-              monthlyPrice,
-              buttonText,
-              popular,
-              inverse,
-              features,
-            }, index) => (
+            ({ title, monthlyPrice, buttonText, popular, inverse, features }, index) => (
               <div
-                key={index} // Adicionando a key correta
+                key={index}
                 className={twMerge(
                   "card",
-                  inverse === true && "border-black bg-black text-white"
+                  inverse === true && "border-black bg-[#004A99] text-white"
                 )}
               >
                 <div className="flex justify-between">
                   <h3
                     className={twMerge(
-                      "text-lg font-bold text-black/50",
-                      inverse === true && "text-white/60"
+                      "text-lg font-bold text-black",
+                      inverse === true && "text-white"
                     )}
                   >
                     {title}
                   </h3>
                   {popular === true && (
-                    <div className="inline-flex text-sm px-4 py-1.5 rounded-xl border border-white/20">
+                    <div className="inline-flex text-sm px-4 py-1.5 rounded-xl border border-[#FF9D00]">
                       <motion.span
                         animate={{
                           backgroundPositionX: "100%",
@@ -113,9 +117,6 @@ export const Pricing = () => {
                 <div className="flex items-baseline gap-1 mt-[30px]">
                   <span className="text-4xl font-bold tracking-tighter leading-none">
                     {monthlyPrice}
-                  </span>
-                  <span className="tracking-tight font-bold text-black/50">
-                    
                   </span>
                 </div>
                 <button
