@@ -76,7 +76,7 @@ export const Pricing = () => {
             No nosso site, você encontra todas as Convenções Coletivas de Trabalho, com informações detalhadas sobre salários, benefícios, jornada de trabalho e outros direitos garantidos para os profissionais do comércio.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-6 mt-10 ml-20 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 mt-10 md:grid-cols-2 lg:grid-cols-3">
           {pricingTiers.map(
             ({ title, monthlyPrice, buttonText, popular, inverse, features }, index) => (
               <div
@@ -96,7 +96,7 @@ export const Pricing = () => {
                     {title}
                   </h3>
                   {popular === true && (
-                    <div className="inline-flex text-sm px-4 py-1.5 rounded-xl border border-[#FF9D00]">
+                    <div className="inline-flex text-sm px-4 py-1.5 rounded-xl border border-white">
                       <motion.span
                         animate={{
                           backgroundPositionX: "100%",

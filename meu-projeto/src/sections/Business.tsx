@@ -70,7 +70,7 @@ const Business: React.FC = () => {
       <div className="container flex flex-col lg:flex-row justify-center items-center gap-8 sm:gap-12">
         {/* Seção de informações */}
         <div className={`${layout.sectionInfo} text-center lg:text-left`}>
-          <h2 className="section-title ml-28 mb-4 ">
+          <h2 className="section-title mb-4 ">
             Central <br className="sm:block hidden" /> do Associado
           </h2>
           <div className="text-center md:text-left">
